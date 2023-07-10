@@ -76,9 +76,19 @@ predict.lm(model.1, mydata, interval ="prediction")
   
 The value that it predicted was 1.57 in change but it can go to a negative 0.863 to an upper positive 4.02 in change. 
 
-
 #### scatterplot with model fit
-  
+
+```{r}
+basicNN <- ggplot(data, aes(y = SIMS, x = ARM)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "SIMS ~ ARM") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+basicNN
+
+```
+
 
 ## Model 2 SIM~GRIP
 
