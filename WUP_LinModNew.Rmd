@@ -165,7 +165,8 @@ The correlation is larger than SIMS~ARM AND SIMS~GRIP. With all three together m
 model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
-
+  
+This model has a residual standard error of 1.144 and a r-squared of 0.5422. This model has a better residual error than SIMS~GRIP and SIMS~ARM. Model is SIMS= .037311 * ARM + .024470 * GRIP - 5.433871
 
 #### predict model.3 at target point
   
